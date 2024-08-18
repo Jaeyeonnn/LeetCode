@@ -1,6 +1,5 @@
-import pandas as pd
-
-def createDataframe(student_data: List[List[int]]) -> pd.DataFrame:
-    column_names = ["student_id", "age"]
-    result_dataframe = pd.DataFrame(student_data, columns=column_names)
-    return result_dataframe
+def createDataframe(student_data: list[list[int]]) -> pd.DataFrame:
+    return pd.DataFrame(
+        data=student_data,
+        columns=['student_id', 'age'],
+    )
